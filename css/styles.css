@@ -12,6 +12,22 @@ body {
 	font-size: 100%;
 }
 
+p {
+    font-family: "Iowan Old Style";
+}
+
+.feature, .download,.about {
+    padding: 10%;
+}
+
+.title,.download-text,footer {
+    text-align: center;
+}
+
+.feature p,.about p {
+    margin-top: 20px;
+}
+
 
 .container {
     max-width: 100%;
@@ -31,6 +47,7 @@ h1,h2 {
     display: flex;
     list-style: none;
     margin-top: 20px;
+    font-family: "Iowan Old Style";
 }
 
 .nav-bar a {
@@ -43,9 +60,8 @@ h1,h2 {
     margin-right: auto;
 }
 
-.title {
-    text-align: center;
-}
+
+/* main section */
 
 .btn-location {
     text-align: center;
@@ -56,32 +72,47 @@ h1,h2 {
 .btn {
     background: #b3455f;
     color: #fff;
+    width: 400px;
     padding: 15px 80px;
     text-decoration: none;
     border-radius: 30px;
+    font-family: "Iowan Old Style";
 }
 
 
 .main img {
     margin-top: 100px;
+    width: 100%;
+    
 }
 
-.feature {
+/* feature section */
+.flex-box {
     display: flex;
-    flex-flow: column;
     justify-content: center;
-    align-items: center;  
+    flex-wrap: wrap; 
 }
 
 .feature-list {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
+    width: 50%;
+    padding: 10%;
+}
+
+.feature h3 {
+    color: #b3455f;
+    text-decoration: underline;
 }
 
 
+/* Download section */
+
 .download {
     background-image: url(../img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.download h1 {
+    color: #400e17;
+    font-family: "Playfair Display";
 }
